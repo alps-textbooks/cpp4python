@@ -50,7 +50,7 @@ int main(){
     <exercise label="mc_cpp_strings">
         <statement>
 
-        <p>Q-3: If I want to create a string in C++, what set of symbols may be used?</p>
+        <p>If I want to create a string in C++, what set of symbols may be used?</p>
 
         </statement>
 <choices>

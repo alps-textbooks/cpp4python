@@ -36,7 +36,7 @@ int main() {
             one piece of data to do its work. The details, hidden <q>inside the box,</q>
             simply compute the result of <c>num*2</c> and return it. We can invoke or
             call the <c>timesTwo</c> function by asking the C++ to
-            evaluate it, passing an actual parameter value, in this case, <c>3</c>.
+            evaluate it, passing an actual parameter value, in this case, <c>5</c>.
             Note that the call to <c>timesTwo</c> returns an integer that can in turn be
             passed to another invocation.</p>
         <p>Let us look at a similar function.</p>
@@ -141,7 +141,7 @@ int main() {
     <exercise label="dog_walker">
         <statement>
 
-        <p>What is the correct return type of the function above <term>int main()</term>?</p>
+        <p>What is the correct return type of the function <c>dogWalk</c>, defined above <term>int main()</term>?</p>
 
         </statement>
 <choices>

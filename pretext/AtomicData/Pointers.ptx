@@ -103,11 +103,11 @@ SOMETYPE* variablename;</pre>
                     where the value is going to be stored? One way to do this is to have a pointer
                     refer to another variable by using the address-of operator, which is denoted by the
                     ampersand symbol, <c>&amp;</c>. The address-of operator <c>&amp;</c> does exactly what it indicates,
-                    variableType varN;  // a variable to hold the value
                     namely it returns the address.</p>
                 <p>The syntax is shown below, where varN stores the value, and ptrN stores
                     the address of where varN is located:</p>
-                <pre>variableType *ptrN = &amp;varN;  // a variable pointing to the address of varN</pre>
+                <pre>variableType varN;  // a variable to hold the value
+variableType *ptrN = &amp;varN;  // a variable pointing to the address of varN</pre>
                 <p>Keep in mind that when declaring a C++ pointer, the pointer needs to
                     reference the same type as the variable or constant to which it points.</p>
                 <p>Expanding on the example above where varN has the value of 9.</p>
@@ -123,9 +123,9 @@ ptrN = &amp;varN;</pre>
         <subsection xml:id="atomic-data_accessing-values-from-pointers">
             <title>Accessing Values from Pointers</title>
             <p>Once you have a C++ pointer, you use the asterisk before the pointer variable,
-                to <em>dereference</em> the pointer, which means go to the location pointed at by the 3.</p>
-            <pre>In other words, varN and *ptrN (note the asterisk in front!) reference the same
-value in the code above.</pre>
+                to <em>dereference</em> the pointer, which means go to the location pointed at by the pointer.</p>
+            <p>In other words, <c>varN</c> and <c>*ptrN</c> (note the asterisk in front!) reference the same
+                value in the code above.</p>
             <p>Let's extend the example above to output the value of a variable and its address
                 in memory:</p>
             
@@ -176,7 +176,7 @@ int main( ) {
     int *ptrN = varN; // Note no ampersand,
         // ptrN now refers to memory position 100,
         // whatever happens to be there!
-        // You might get an error or you might not!
+        // A modern compiler reports an error here!
 
      cout &lt;&lt; "varN value: " &lt;&lt; varN &lt;&lt; endl;
      cout &lt;&lt; "ptrN location: " &lt;&lt; ptrN &lt;&lt; endl;
@@ -191,12 +191,12 @@ int main( ) {
             <p><term>This is BAD, BAD, BAD!</term></p>
             
             <figure align="center" xml:id="id4"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Dangling pointer reference</caption><image source="AtomicData/new_point_broken.png" width="50%" alt="image"/></figure>
-            <p>If your compiler does not catch that error (the one for this class may),
-                the first <c>cout</c> instruction outputs</p>
-            <pre>After changing *ptrN, varN now has: 50</pre>
-            <p>which is expected because you changed where ptrN is pointing to and
-                NOT the contents of where it is pointing.</p>
-            <p>The second <c>cout</c> instruction is a disaster because
+            <p>A modern C++ compiler catches this error and refuses to build the program.
+                It reports a message such as <c>invalid conversion from 'int' to 'int*'</c>,
+                because <c>varN</c> holds an integer value, not an address.
+                If your compiler only warns and builds the program anyway,
+                ptrN holds the address 100 instead of the address of varN.</p>
+            <p>The last <c>cout</c> instruction is then a disaster because
                 (1) You don't know what is stored in location 100 in memory, and
                 (2) that location is outside of your segment (area in memory reserved
                 for your program), so the operating system will jump in with a message

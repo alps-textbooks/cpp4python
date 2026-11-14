@@ -211,7 +211,7 @@ main()
     
 
 <exercise label="matching_HT">
-    <statement><p> Match the Hash Table operations with their corresponding explination.</p></statement>
+    <statement><p> Match the Hash Table operations with their corresponding explanation.</p></statement>
     <feedback><p>Feedback shows incorrect matches.</p></feedback>
 <matches><match order="1"><premise>[ ]</premise><response>Returns the value associated with the key, otherwise throws error.</response></match><match order="2"><premise>erase</premise><response>Deletes the entry from the hash table.</response></match><match order="3"><premise>count</premise><response>Returns true if key is in the hash table, and false otherwise.</response></match><match order="4"><premise>begin</premise><response>An iterator to the first element in the hash table.</response></match><match order="5"><premise>end</premise><response>An iterator pointing to past-the-end element of the hash table.</response></match></matches></exercise>  </reading-questions>      
     </section>

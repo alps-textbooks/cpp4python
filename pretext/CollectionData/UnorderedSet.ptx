@@ -3,7 +3,7 @@
         <p>An <term>unordered_set</term> is an unordered collection of zero or more unique C++ data values
             of a particular type.
             To use unordered_sets, you import <c>unordered_set</c> from the Standard template library with
-            <c>#include &lt;unorderd_set&gt;</c>.</p>
+            <c>#include &lt;unordered_set&gt;</c>.</p>
         <p>Unordered_sets allow for fast retrieval of individual elements based on their value.
             In an unordered_set, the value of an element is at the same time its key, that identifies it uniquely.
             <c>Keys</c> are <term>immutable</term>, therefore, the elements in an <c>unordered_set</c> cannot be modified once in the container -
@@ -157,8 +157,8 @@ return 0;
     
 
 <exercise label="matching_us">
-    <statement><p> Match the Unordered Sets operations with their corresponding explination.</p></statement>
+    <statement><p> Match the Unordered Sets operations with their corresponding explanation.</p></statement>
     <feedback><p>Feedback shows incorrect matches.</p></feedback>
-<matches><match order="1"><premise>union</premise><response>Returns a new set with all elements from both sets.</response></match><match order="2"><premise>intersection</premise><response>Returns a new set with only those elements common to both sets.</response></match><match order="3"><premise>difference</premise><response> Returns a new set with all items from first set not in second.</response></match><match order="4"><premise>add</premise><response>Adds item to the set.</response></match><match order="5"><premise>remove</premise><response>erases item from the set.</response></match><match order="6"><premise>clear</premise><response>Removes all elements from the set.</response></match></matches></exercise>  </reading-questions>     
+<matches><match order="1"><premise>union</premise><response>Returns a new set with all elements from both sets.</response></match><match order="2"><premise>intersection</premise><response>Returns a new set with only those elements common to both sets.</response></match><match order="3"><premise>difference</premise><response> Returns a new set with all items from first set not in second.</response></match><match order="4"><premise>insert</premise><response>Adds item to the set.</response></match><match order="5"><premise>erase</premise><response>erases item from the set.</response></match><match order="6"><premise>clear</premise><response>Removes all elements from the set.</response></match></matches></exercise>  </reading-questions>     
     </section>
     
