@@ -29,7 +29,7 @@
             <statement><p>
         </p></statement>
             
-        <matches><match order="1"><premise>what color to fill drawing with.</premise><response>turtle.fillcolor</response></match><match order="10"><premise>write some text to the canvas.</premise><response>turtle.write</response></match><match order="2"><premise>start filling the shape.</premise><response>turtle.beginfill</response></match><match order="3"><premise>stops filling the shape.</premise><response>turtle.endfill</response></match><match order="4"><premise>change the paintbrush color.</premise><response>turtle.pencolor</response></match></matches></exercise>        
+        <matches><match order="1"><premise>what color to fill drawing with.</premise><response>turtle.fillcolor</response></match><match order="10"><premise>write some text to the canvas.</premise><response>turtle.write</response></match><match order="2"><premise>start filling the shape.</premise><response>turtle.begin_fill</response></match><match order="3"><premise>stops filling the shape.</premise><response>turtle.end_fill</response></match><match order="4"><premise>change the paintbrush color.</premise><response>turtle.pencolor</response></match></matches></exercise>        
         
         <exercise label="cturtle_dnd_glossary1">
             <statement><p>
@@ -131,7 +131,7 @@ int main() {
     <exercise label="turtle_checkyourself_mchoice_2">
         <statement>
 
-        <p>What kind of shape does the above activecode create?</p>
+        <p>What kind of shape does the above code create?</p>
 
         </statement>
 <choices>

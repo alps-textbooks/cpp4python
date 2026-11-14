@@ -158,7 +158,7 @@ int main(){         // main() must exist &amp; return an int
                     <p>none of the above</p>
                 </statement>
                 <feedback>
-                    <p> The correct statement would be "cout &lt;&lt; x;" or "std:cout &lt;&lt; x;" but the insertion operator is certainly needed.
+                    <p> The correct statement would be "cout &lt;&lt; x;" or "std::cout &lt;&lt; x;" but the insertion operator is certainly needed.
                     </p>
                 </feedback>
             </choice>

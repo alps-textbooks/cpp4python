@@ -9,7 +9,7 @@
                     
                 </gi>
                 <gi>
-                    <title>beginfill</title>
+                    <title>begin_fill</title>
                     
                         <p>Begins to fill the shape indicated by the path the turtle takes after calling it.</p>
                     
@@ -21,9 +21,9 @@
                     
                 </gi>
                 <gi>
-                    <title>endfill</title>
+                    <title>end_fill</title>
                     
-                        <p>Finishes filling the shape the turtle has outlined since calling <c classes="code">beginfill</c>.</p>
+                        <p>Finishes filling the shape the turtle has outlined since calling <c classes="code">begin_fill</c>.</p>
                     
                 </gi>
                 <gi>
