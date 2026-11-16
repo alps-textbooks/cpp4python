@@ -46,19 +46,19 @@ int main(){         // main() must exist &amp; return an int
     
                 <choice>
                     <statement>
-                        <p>&lt;!-</p>
+                        <p><c>&lt;!--</c></p>
                     </statement>
                     <feedback>
-                        <p>No, &lt;!- is used in html to begin comments, but it is not used in C++.</p>
+                        <p>No, &lt;!-- is used in html to begin comments, but it is not used in C++.</p>
                     </feedback>
                 </choice>
     
                 <choice>
                     <statement>
-                        <p>⋕</p>
+                        <p>#</p>
                     </statement>
                     <feedback>
-                        <p> No, ⋕ is used in Python for comments, but in C++ it is used for compiler directives such as loading a code library.
+                        <p> No, # is used in Python for comments, but in C++ it is used for compiler directives such as loading a code library.
                         </p>
                     </feedback>
                 </choice>
@@ -158,7 +158,7 @@ int main(){         // main() must exist &amp; return an int
                     <p>none of the above</p>
                 </statement>
                 <feedback>
-                    <p> The correct statement would be "cout &lt;&lt; x;" or "std:cout &lt;&lt; x;" but the insertion operator is certainly needed.
+                    <p> The correct statement would be "cout &lt;&lt; x;" or "std::cout &lt;&lt; x;" but the insertion operator is certainly needed.
                     </p>
                 </feedback>
             </choice>
@@ -175,7 +175,7 @@ int main(){         // main() must exist &amp; return an int
 <condition string="^\s*default\s*$"><feedback><p>Incorrect. Please try again.</p></feedback></condition></var></setup>
 </exercise> 
 <exercise label="matching_intro">
-    <statement><p>Drag each glossary term to its' corresponding definition.</p></statement>
+    <statement><p>Drag each glossary term to its corresponding definition.</p></statement>
     <feedback><p>Feedback shows incorrect matches.</p></feedback>
     <matches>
     <match order="1"><premise>dynamically typed</premise><response>Programing language, in which variables need not necessarily be defined before they are used, and can change during execution.</response></match>
@@ -184,7 +184,7 @@ int main(){         // main() must exist &amp; return an int
     </exercise>
     
     <exercise label="intro_matching">
-    <statement><p>Drag each glossary term to its' corresponding definition.</p></statement>
+    <statement><p>Drag each glossary term to its corresponding definition.</p></statement>
     <feedback><p>Feedback shows incorrect matches.</p></feedback>
     <matches>
 
@@ -197,7 +197,7 @@ int main(){         // main() must exist &amp; return an int
     </exercise>
     
     <exercise label="intro_matching2">
-    <statement><p>Drag each glossary term to its' corresponding definition.</p></statement>
+    <statement><p>Drag each glossary term to its corresponding definition.</p></statement>
     <feedback><p>Feedback shows incorrect matches.</p></feedback>
     <matches>
 

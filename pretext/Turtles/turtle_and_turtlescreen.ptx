@@ -75,7 +75,7 @@ screen.bye();
                     </row>
                     <row>
                         <cell>
-                            turtle.beginfill
+                            turtle.begin_fill
                         </cell>
                         <cell>
                             tells the turtle to begin filling a shape as it moves.
@@ -83,7 +83,7 @@ screen.bye();
                     </row>
                     <row>
                         <cell>
-                            turtle.endfill
+                            turtle.end_fill
                         </cell>
                         <cell>
                             tells the turtle to finish filling the shape it has created as it moved.
@@ -285,7 +285,7 @@ int main() {
     
 
 
-            <exercise label="cturtle_question_3" indent="show" language="python"><statement>
+            <exercise label="cturtle_question_3" indent="show" language="cpp"><statement>
         <p>Construct a program that fills a green triangle using begin_fill and end_fill
             using the example code above as a guide.</p>
 </statement>
@@ -304,7 +304,7 @@ int main() {
 </block><block order="2">
 <cline>    for(int i = 0; i &lt; 3; i++){</cline>
 <cline>        turtle.forward(50);</cline>
-<cline>        turtle.right(60);</cline>
+<cline>        turtle.right(120);</cline>
 <cline>    }</cline>
 </block><block order="6">
 <cline>    turtle.end_fill();</cline>
@@ -325,7 +325,7 @@ int main() {
 <exercise label="cturtle2">
     <statement><p>Match the turtle method descriptions to the methods they belong to.</p></statement>
 <matches>
-    <match order="1"><premise>what color to fill drawing with.</premise><response>turtle.fillcolor</response></match><match order="2"><premise>start filling the shape.</premise><response>turtle.beginfill</response></match><match order="3"><premise>stops filling the shape.</premise><response>turtle.endfill</response></match><match order="4"><premise>change the pen color.</premise><response>turtle.pencolor</response></match><match order="5"><premise>change the pen size.</premise><response>turtle.width</response></match>
+    <match order="1"><premise>what color to fill drawing with.</premise><response>turtle.fillcolor</response></match><match order="2"><premise>start filling the shape.</premise><response>turtle.begin_fill</response></match><match order="3"><premise>stops filling the shape.</premise><response>turtle.end_fill</response></match><match order="4"><premise>change the pen color.</premise><response>turtle.pencolor</response></match><match order="5"><premise>change the pen size.</premise><response>turtle.width</response></match>
 </matches>
 
 </exercise> 

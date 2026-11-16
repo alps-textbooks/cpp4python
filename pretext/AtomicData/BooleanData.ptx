@@ -76,7 +76,7 @@ main()
                             less than
                         </cell>
                         <cell>
-                            <m>&lt;</m>
+                            <c>&lt;</c>
                         </cell>
                         <cell>
                             Less than operator
@@ -87,7 +87,7 @@ main()
                             greater than
                         </cell>
                         <cell>
-                            <m>&gt;</m>
+                            <c>&gt;</c>
                         </cell>
                         <cell>
                             Greater than operator
@@ -98,7 +98,7 @@ main()
                             less than or equal
                         </cell>
                         <cell>
-                            <m>&lt;=</m>
+                            <c>&lt;=</c>
                         </cell>
                         <cell>
                             Less than or equal to operator
@@ -109,7 +109,7 @@ main()
                             greater than or equal
                         </cell>
                         <cell>
-                            <m>&gt;=</m>
+                            <c>&gt;=</c>
                         </cell>
                         <cell>
                             Greater than or equal to operator
@@ -120,7 +120,7 @@ main()
                             equal
                         </cell>
                         <cell>
-                            <m>==</m>
+                            <c>==</c>
                         </cell>
                         <cell>
                             Equality operator
@@ -131,7 +131,7 @@ main()
                             not equal
                         </cell>
                         <cell>
-                            <m>!=</m>
+                            <c>!=</c>
                         </cell>
                         <cell>
                             Not equal operator
@@ -142,7 +142,7 @@ main()
                             logical and
                         </cell>
                         <cell>
-                            &amp;&amp;
+                            <c>&amp;&amp;</c>
                         </cell>
                         <cell>
                             Both operands true for result to be true
@@ -153,7 +153,7 @@ main()
                             logical or
                         </cell>
                         <cell>
-                            <m>||</m>
+                            <c>||</c>
                         </cell>
                         <cell>
                             One or the other operand is true for the result to be true
@@ -164,7 +164,7 @@ main()
                             logical not
                         </cell>
                         <cell>
-                            <m>!</m>
+                            <c>!</c>
                         </cell>
                         <cell>
                             Negates the truth value, false becomes true, true becomes false
@@ -239,7 +239,7 @@ int main(){
         </input>
     </program>
         <p>The declaration <c>int theSum = 4;</c> creates a variable called
-            <c>theSum</c> and initializes it to hold the data value of <c>4git</c>.
+            <c>theSum</c> and initializes it to hold the data value of <c>4</c>.
             As in Python, the right-hand side of each assignment
             statement is evaluated and the resulting data value is
             <q>assigned</q> to the variable named on the left-hand side.

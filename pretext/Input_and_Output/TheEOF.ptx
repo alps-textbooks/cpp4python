@@ -51,7 +51,7 @@ int main() {
         exit(1);
     }
 
-    fout.open("neat.txt");
+    fout.open("neat.dat");
     if (fout.fail()) { // oops the output file open failed!
         cout &lt;&lt; "Output file opening failed.\n";
         exit(1);

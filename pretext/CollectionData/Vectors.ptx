@@ -139,7 +139,7 @@
             Thus the vector typically has an actual <em>capacity</em> greater than the storage <em>size</em> strictly needed to contain its elements.</p>
         <subsection xml:id="collection-data_iterating-through-vectors">
             <title>Iterating through Vectors</title>
-            <p>When iterating vectors, you must first find the length of your container. You can simply call the <c>.length()</c> function.
+            <p>When iterating vectors, you must first find the length of your container. You can simply call the <c>.size()</c> function.
                 For arrays, the number of elements can be found by getting the size in memory of the array
                 by using the <c>sizeof()</c> function, and then dividing it by the size of the first element of
                 the array using the same <c>sizeof()</c> function. Because all elements in C++ arrays are
@@ -311,11 +311,11 @@ main()
                     <reading-questions xml:id="rqs-vectors">
                         <title>Reading Questions</title>
                     <exercise label="matching_vectors">
-                        <statement><p> Match the Vector operations with their corresponding explination.</p></statement>
+                        <statement><p> Match the Vector operations with their corresponding explanation.</p></statement>
                         <feedback><p>Feedback shows incorrect matches.</p></feedback>
                     <matches><match order="1"><premise>[ ]</premise><response>Accesses value of an element.</response></match><match order="2"><premise>=</premise><response> Assigns value to an element.</response></match><match order="3"><premise>push_back</premise><response>Appends item to the end of the vector.</response></match><match order="4"><premise>pop_back</premise><response> Deletes last item of the vector.</response></match><match order="5"><premise>insert</premise><response>Injects an item into the vector.</response></match></matches></exercise> 
                     <exercise label="matching_vectors1">
-                        <statement><p> Match the Vector operations with their corresponding explination.</p></statement>
+                        <statement><p> Match the Vector operations with their corresponding explanation.</p></statement>
                         <feedback><p>Feedback shows incorrect matches.</p></feedback>
                     <matches>
                         <match order="1"><premise>erase</premise><response>Deletes an element from the choosen index.</response></match><match order="2"><premise>size</premise><response>Returns the actual capacity used by elements.</response></match><match order="3"><premise>capacity</premise><response>Returns the ammount of allocated storage space.</response></match><match order="4"><premise>reserve</premise><response> Request a change in space to amount</response></match>

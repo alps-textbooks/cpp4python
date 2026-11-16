@@ -84,7 +84,7 @@ int main( ) {
         </input>
     </program>
         </blockquote>
-        <p>For this program <xref ref="lst-swap-inputs">Swap Inputs</xref> to reverse the order of the integers the users types in, the function <c>swap_values(...)</c> must be able to change the values of the arguments. Try removing one or both of the <q>&amp;</q> &#8216;s in this code to see what happens.</p>
+        <p>For this program to reverse the order of the two integers, the function <c>swap_values(...)</c> must be able to change the values of the arguments. Try removing one or both of the <q>&amp;</q> &#8216;s in this code to see what happens.</p>
         <p>Analyze the program and answer the question that involves parameter passing below:</p>
         <p xml:id="lst-swap-inputs">
     <program xml:id="questionexample1" interactive="activecode" language="cpp">
@@ -207,7 +207,7 @@ int main(){
                     <p>The "&amp;" in this function is incorrectly used, resulting in an overlapping memory reference.</p>
                 </statement>
                 <feedback>
-                    <p>No, the use of "&amp;" here is correct. Read over the active code 4 example earlier in the section.</p>
+                    <p>No, the use of "&amp;" here is correct. Read over the <c>swap_values</c> example earlier in the section.</p>
                 </feedback>
             </choice>
 

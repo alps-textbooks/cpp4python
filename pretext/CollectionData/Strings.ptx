@@ -266,7 +266,7 @@ main()
 
 
     <exercise label="string_types">
-        <statement><p>Drag each data type to its' corresponding C++ initialization syntax.</p></statement>
+        <statement><p>Drag each data type to its corresponding C++ initialization syntax.</p></statement>
         <feedback><p>Feedback shows incorrect matches.</p></feedback>
     <matches><match order="1"><premise>char</premise><response>'a'</response></match><match order="2"><premise>char array</premise><response>{'a'}</response></match><match order="3"><premise>string</premise><response>"a"</response></match></matches></exercise>
 </reading-questions>

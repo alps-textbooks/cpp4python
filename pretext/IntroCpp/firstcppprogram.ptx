@@ -229,7 +229,7 @@ int main(){
                 user might look like. Feel free to change 12.4 to other values!</p>
 
     </statement>
-    <program xml:id="cin_user_input_editor" interactive="activecode" language="cpp" stdin="12.4">
+    <program xml:id="cin_user_input_editor" interactive="activecode" language="cpp">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -237,7 +237,7 @@ using namespace std;
 int main() {
 
   //declares num as a floating point number variable
-  float num = 12.4; // Note: cin is not currently working in activecode
+  float num = 12.4;
 
   // Displays this text to the console
   cout &lt;&lt; "Give me a number:" &lt;&lt; endl;
@@ -251,6 +251,7 @@ int main() {
   return 0;
 }
         </input>
+        <stdin>12.4</stdin>
     </program>
         </subsection>
         <subsection xml:id="intro-cpp_type-declarations">
