@@ -65,7 +65,7 @@ int main() {
         </input>
     </program>
 
-    <program xml:id="cturtle_practical_example_Python" interactive="activecode" language="Python">
+    <program xml:id="cturtle_practical_example_Python" interactive="activecode" language="python">
         <input>
 import turtle
 
