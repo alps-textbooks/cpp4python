@@ -114,9 +114,10 @@ using namespace std;
 //also outputs the location of the value in memory
 int main(){
     int myarray[] = {2,4,6,8};
+    int* p = myarray;    // p points at myarray[0]
     for (int i=0; i&lt;=8; i++){
-        cout &lt;&lt; myarray[i] &lt;&lt; endl;
-        cout &lt;&lt; "id: " &lt;&lt; &amp;myarray[i] &lt;&lt; endl;
+        cout &lt;&lt; p[i] &lt;&lt; endl;    // p[4] .. p[8] are past the end of myarray
+        cout &lt;&lt; "id: " &lt;&lt; &amp;p[i] &lt;&lt; endl;
     }
     return 0;
 }
@@ -153,22 +154,27 @@ main()
 #include &lt;iostream&gt;
 using namespace std;
 
-// Demonstrates how in iterating outside
-// of an arry in C++, can change data in other places
+// Demonstrates how writing outside of an array in C++
+// can change data in other places
+struct Shelf {
+    int myarray[2];
+    int otherdata[2];    // stored right after myarray
+};
+
 int main(){
-    int myarray[] = {2, 4};
-    int otherdata[]={777, 777};
+    Shelf shelf = {{2, 4}, {777, 777}};
+    int* p = shelf.myarray;    // p points at myarray[0]
     for (int i=0; i&lt;4; i++){
-        myarray[i]=0;
+        p[i]=0;    // p[2] and p[3] are past the end of myarray
         cout &lt;&lt;"myarray["&lt;&lt; i &lt;&lt; "]=";
-        cout &lt;&lt; myarray[i]&lt;&lt; endl;
-        cout &lt;&lt; "add:" &lt;&lt; &amp;myarray[i] &lt;&lt; endl;
+        cout &lt;&lt; p[i]&lt;&lt; endl;
+        cout &lt;&lt; "add:" &lt;&lt; &amp;p[i] &lt;&lt; endl;
     }
 
     for (int i=0; i&lt;2; i++){
         cout &lt;&lt;"otherdata["&lt;&lt; i &lt;&lt; "]=";
-        cout &lt;&lt; otherdata[i]&lt;&lt; endl;
-        cout &lt;&lt; "add:" &lt;&lt; &amp;otherdata[i] &lt;&lt; endl;
+        cout &lt;&lt; shelf.otherdata[i]&lt;&lt; endl;
+        cout &lt;&lt; "add:" &lt;&lt; &amp;shelf.otherdata[i] &lt;&lt; endl;
     }
 
     return 0;

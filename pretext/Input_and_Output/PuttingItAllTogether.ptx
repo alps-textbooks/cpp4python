@@ -1,7 +1,11 @@
 <section xml:id="io-putting-it-all-together">
         <title>Putting it all Together</title>
         <p>The following program combines all of the elements above and asks the user for the input and output filenames. After testing for open failures, it will read three numbers from the input file and write the sum into the output file.</p>
-        <pre>#include &lt;cstdlib&gt;  // for the exit function
+        <p>Run it with the input file <c>numbers.txt</c>, which holds 10 20 30, and any output file name.</p>
+        <datafile label="io-numbers-txt" xml:id="io-numbers-txt" filename="numbers.txt"><pre>10 20 30</pre></datafile>
+        <program xml:id="io_sum_three_cpp" interactive="activecode" language="cpp" add-files="io-numbers-txt">
+            <input>
+#include &lt;cstdlib&gt;  // for the exit function
 #include &lt;fstream&gt;  // for I/O member functions
 #include &lt;iostream&gt; // for cout
 using namespace std; // To avoid writing std:: before standard library components
@@ -56,9 +60,9 @@ int main() {
     cout &lt;&lt; "End of Program." &lt;&lt; endl;
 
     return 0;
-}</pre>
-        <raw format="html" xml:space="preserve">&lt;div&gt;
-    &lt;iframe height="400px" width="100%" src="https://repl.it/@CodyWMitchell/File-Handling-3?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"&gt;&lt;/iframe&gt;
-&lt;/div&gt;</raw>
+}
+            </input>
+            <stdin>numbers.txt sum.txt</stdin>
+        </program>
     </section>
 
